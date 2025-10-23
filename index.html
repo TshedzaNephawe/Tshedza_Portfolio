@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshedza POrtfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">Tshedza Nephawe</a>
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#tech">Tech Stack</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Hi, I'm Tshedza — a Web Developer & IT student</h1>
+                    <p>I build responsive web experiences and learning tools. Browse my services, projects and tech stack below.</p>
+                    <p class="cta-row"><a class="btn" href="#projects">See Projects</a> <a class="btn btn-ghost" href="#contact">Get in touch</a></p>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <!-- decorative placeholder -->
+                    <div class="avatar">TN</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="grid services-grid">
+                    <article class="card">
+                        <h3>Website Development</h3>
+                        <p>Responsive static and dynamic websites using modern HTML, CSS and JavaScript.</p>
+                    </article>
+                    <article class="card">
+                        <h3>UI / UX Design</h3>
+                        <p>Clean, accessible interfaces focused on usability and performance.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Learning Tools</h3>
+                        <p>Small apps and exercises for classmates to learn core web concepts.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="grid projects-grid" id="projectsGrid">
+                    <article class="project card" data-title="Portfolio Site" data-desc="My personal portfolio built with HTML, CSS and vanilla JS." tabindex="0">
+                        <div class="project-thumb">P1</div>
+                        <h3>Portfolio Site</h3>
+                    </article>
+                    <article class="project card" data-title="Task Manager" data-desc="A small task manager app showcasing CRUD and localStorage." tabindex="0">
+                        <div class="project-thumb">P2</div>
+                        <h3>Task Manager</h3>
+                    </article>
+                    <article class="project card" data-title="Quiz App" data-desc="Interactive quiz app for learning programming concepts." tabindex="0">
+                        <div class="project-thumb">P3</div>
+                        <h3>Quiz App</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML5 & Semantic Markup</li>
+                    <li>CSS3 — Flexbox & Grid</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Responsive Design & Accessibility</li>
+                    <li>Git & Version Control</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tech" class="section tech">
+            <div class="container">
+                <h2>Tech Stack</h2>
+                <div class="tech-grid">
+                    <div class="tech">HTML</div>
+                    <div class="tech">CSS</div>
+                    <div class="tech">JavaScript</div>
+                    <div class="tech">Node.js</div>
+                    <div class="tech">Git</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>If you'd like to work together or see my code, email me at <a href="mailto:tshedza@example.com">tshedza@example.com</a> or connect on GitHub.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button id="modalClose" class="modal-close" aria-label="Close">×</button>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Tshedza Nephawe — Built with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
